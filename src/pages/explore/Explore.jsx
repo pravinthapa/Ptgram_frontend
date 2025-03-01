@@ -1,5 +1,5 @@
 import React from "react";
-import items from "../../dummyJsons/explore.json";
+import items from "../../dummyjsons/explore.json";
 
 export default function Explore() {
   return (

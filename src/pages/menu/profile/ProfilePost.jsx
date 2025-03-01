@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { MdOutlinePhotoCamera } from "react-icons/md";
-import Images from "../../../dummyJsons/Posts.json";
 import PostModal from "../../../tools/PostModal";
 import { usePostData } from "../../../hooks/useQueryData";
 

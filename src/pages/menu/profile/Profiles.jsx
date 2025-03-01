@@ -12,23 +12,38 @@ import { Link } from "react-router-dom";
 
 export default function Profiles() {
   const [active, setActive] = useState(1);
+  const [photo, setPhoto] = useState("./profile.jpg");
   const activity = [
     { title: "Photos", icon: <IoMdGrid />, id: 1 },
     { title: "Videos", icon: <FiVideo />, id: 2 },
   ];
   const { data } = useUserData();
-  const { data: PostData ,refetch } = usePostData();
+  const { data: PostData, refetch } = usePostData();
   const filter = PostData?.filter((filter) => filter?.user_id === data?._id);
-  
+  const handlePhoto = (e) => {
+    const photoSelected = e.target.files[0];
+    if (photoSelected) {
+      setPhoto(URL.createObjectURL(photoSelected));
+    }
+  };
+
   return (
     <div className="place-items-center ">
       <div className="  py-[50px]  h-fit border-b-[1px] w-fit px-36 border-white mb-10">
         <div className="flex gap-[50px] justify-center  place-items-center">
-          <div>
-            <ProfileIcon
-              profile={data?.profile ?? "./profile.jpg"}
-              classNamediv={"w-[140px]"}
-            />
+          <div className="flex flex-col items-center  gap-2">
+            <ProfileIcon profile={photo} classNamediv={"w-[140px]"} />
+            <label htmlFor="photo">
+              <p className="text-lg font-bold rounded-full px-3 p-1 bg-slate-800">
+                Upload Photo
+              </p>
+              <input
+                onChange={handlePhoto}
+                type="file"
+                className="hidden"
+                id="photo"
+              />
+            </label>
           </div>
           <div className="flex flex-col gap-4">
             <div className="flex  gap-5 items-center h-fit ">
@@ -47,7 +62,7 @@ export default function Profiles() {
             </div>
             <div className="flex gap-[65px] pl-">
               <p>{filter?.length} post</p>
-              <p>{data?.friends?.length} follower</p>
+              <p>{data?.friends?.length} followers</p>
               {/* <p>50 following</p> */}
             </div>
             <div>
@@ -79,7 +94,7 @@ export default function Profiles() {
       </div>
 
       {active === 1 ? (
-        <UserPosts data={filter} refetch={refetch}  />
+        <UserPosts data={filter} refetch={refetch} />
       ) : active === 2 ? (
         <ProfileVideos data={filter} />
       ) : (

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import items from "../../dummyJsons/connections.json";
 import Button from "../../tools/Button";
 import ConfirmModal from "../../components/ConfirmModal";
 import { useAllUserData, useUserData } from "../../hooks/useQueryData";

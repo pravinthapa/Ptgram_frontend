@@ -11,7 +11,6 @@ import Videos from "./pages/videos/Videos";
 import Profiles from "./pages/menu/profile/Profiles";
 import Explore from "./pages/explore/Explore";
 import Message from "./pages/messages/Message";
-import Animation from "./pages/animation/Animation";
 
 export default function RouteHandler() {
   const { loggedIn } = useAuthStore();
@@ -31,7 +30,6 @@ export default function RouteHandler() {
           <Route path="/explore" element={<Explore />} />
         </Route>
       )}
-      <Route path="/animation" element={<Animation />} />
       <Route path="*" element={<Navigate to="/login" />} />
     </Routes>
   );
