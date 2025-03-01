@@ -1,0 +1,35 @@
+.slider {
+  top: 10%;
+  left: calc(50% - 100px);
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  animation: frame 20s linear infinite;
+}
+.item {
+  position: absolute;
+  inset: 0 0 0 0;
+  transform: rotateY(calc((var(--position)) * (360 / var(--quantity)) * 1deg))
+   ;
+}
+.slider2 {
+  bottom: 30%;
+  left: calc(50% - 100px);
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  animation: frame 20s linear infinite;
+}
+.item2 {
+  position: absolute;
+  inset: 0 0 0 0;
+  transform: rotateY(calc((var(--position)) * (360 / var(--quantity)) * 1deg))
+  translateZ(500px)
+   ;
+}
+@keyframes frame {
+  from {
+    transform: perspective(1000px) rotateX(-10deg) rotateY(0deg);
+}
+to {
+    transform: perspective(1000px) rotateX(-10deg) rotateY(360deg);
+  }
+}
