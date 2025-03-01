@@ -1,0 +1,103 @@
+
+[
+  {
+    "id": "1",
+    "name": "Prabin thapa",
+    "privacy": "Public",
+    "img": "/images/prabin_1.jpg",
+    "title": "First Post",
+    "mutual": "30 mutual",
+    "tags": "At the concert",
+    "time": "2 hrs"
+  },
+  {
+    "id": "2",
+    "name": "Jhol Magar",
+    "privacy": "Public",
+    "img": "/images/prabin_2.jpg",
+    "title": "First Post",
+    "mutual": "30 mutual",
+    "tags": "A good day..",
+    "time": "3 hrs"
+  },
+  {
+    "id": "3",
+    "name": "Prakash khadka",
+    "privacy": "Public",
+    "img": "/images/prabin_3.jpg",
+    "title": "First Post",
+    "mutual": "30 mutual",
+    "tags": "peace..",
+    "time": "5 hrs"
+  },
+  {
+    "id": "4",
+    "name": "Om uprety",
+    "privacy": "Public",
+    "img": "/images/prabin_4.jpg",
+    "title": "First Post",
+    "mutual": "30 mutual",
+    "tags": "From the top check it out.",
+    "time": "1 hrs"
+  },
+  {
+    "id": "5",
+    "name": "Bhuwan Bam",
+    "privacy": "Public",
+    "img": "/images/prabin_5.jpg",
+    "title": "First Post",
+    "mutual": "30 mutual",
+    "tags": "kaha chan balen.",
+    "time": "8 hrs"
+  },
+  {
+    "id": "6",
+    "name": "Prabin thapa",
+    "privacy": "Public",
+    "img": "/images/prabin_1.jpg",
+    "title": "First Post",
+    "mutual": "30 mutual",
+    "tags": "At the concert",
+    "time": "2 hrs"
+  },
+  {
+    "id": "7",
+    "name": "Jhol Magar",
+    "privacy": "Public",
+    "img": "/images/prabin_2.jpg",
+    "title": "First Post",
+    "mutual": "30 mutual",
+    "tags": "A good day..",
+    "time": "3 hrs"
+  },
+  {
+    "id": "8",
+    "name": "Prakash khadka",
+    "privacy": "Public",
+    "img": "/images/prabin_3.jpg",
+    "title": "First Post",
+    "mutual": "30 mutual",
+    "tags": "peace..",
+    "time": "5 hrs"
+  },
+  {
+    "id": "9",
+    "name": "Om uprety",
+    "privacy": "Public",
+    "img": "/images/prabin_4.jpg",
+    "title": "First Post",
+    "mutual": "30 mutual",
+    "tags": "From the top check it out.",
+    "time": "1 hrs"
+  },
+  {
+    "id": "10",
+    "name": "Bhuwan Bam",
+    "privacy": "Public",
+    "img": "/images/prabin_5.jpg",
+    "title": "First Post",
+    "mutual": "30 mutual",
+    "tags": "kaha chan balen.",
+    "time": "8 hrs"
+  }
+]
